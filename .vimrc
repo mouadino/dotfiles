@@ -3,6 +3,8 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+filetype plugin indent on
+
 " Use OSX clipboard by default.
 set clipboard=unnamed
 
@@ -39,7 +41,6 @@ function! StripWhitespace()
 	call setpos('.', save_cursor)
 	call setreg('/', old_query)
 endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
 
 " Different other plugins.
 call plug#begin('~/.vim/plugged')
@@ -53,4 +54,19 @@ source ~/.vim/plug/bash.vim
 
 call plug#end()
 
-filetype plugin indent on
+" Enable airline dark solarized.
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+
+" Enable Syntastic.
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Mapped keys.
+:nmap <silent> <leader>d <Plug>DashSearch
