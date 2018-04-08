@@ -43,27 +43,14 @@ noremap <leader>ss :call StripWhitespace()<CR>
 
 " Different other plugins.
 call plug#begin('~/.vim/plugged')
-" Utilities.
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-fugitive'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'mileszs/ack.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'flazz/vim-colorschemes'
-Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ctrlpvim/ctrlp.vim'
-" Write markdown and RestText distraction free.
-" :Goyo to open zen mode.
-Plug 'junegunn/goyo.vim'
-Plug 'amix/vim-zenroom2'
-" Comment code:
-" gcc: Comment a line.
-" gcap: Comment a paragraph.
-" Visual select + gc to comment selected text.
-Plug 'tpope/vim-commentary'
+
+source ~/.vim/plug/main.vim
+source ~/.vim/plug/clojure.vim
+source ~/.vim/plug/golang.vim
+source ~/.vim/plug/typescript.vim
+source ~/.vim/plug/rust.vim
+source ~/.vim/plug/bash.vim
 
 call plug#end()
 
-if filereadable(glob("~/.vimrc.local")) 
-    source ~/.vimrc.local
-endif
+filetype plugin indent on
