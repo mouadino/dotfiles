@@ -1,0 +1,8 @@
+{
+  "libs": ["ecmascript"],
+  "plugins": {
+    "node": {},
+    "chrome-extension": {}
+  },
+  "ecmaVersion": 6
+}

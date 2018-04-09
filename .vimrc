@@ -49,6 +49,7 @@ source ~/.vim/plug/main.vim
 source ~/.vim/plug/clojure.vim
 source ~/.vim/plug/golang.vim
 source ~/.vim/plug/typescript.vim
+source ~/.vim/plug/javascript.vim
 source ~/.vim/plug/rust.vim
 source ~/.vim/plug/bash.vim
 
