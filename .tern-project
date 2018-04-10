@@ -1,5 +1,5 @@
 {
-  "libs": ["ecmascript"],
+  "libs": ["ecmascript", "browser"],
   "plugins": {
     "node": {},
     "chrome-extension": {}

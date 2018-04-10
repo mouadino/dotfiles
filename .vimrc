@@ -52,6 +52,7 @@ source ~/.vim/plug/typescript.vim
 source ~/.vim/plug/javascript.vim
 source ~/.vim/plug/rust.vim
 source ~/.vim/plug/bash.vim
+source ~/.vim/plug/html.vim
 
 call plug#end()
 

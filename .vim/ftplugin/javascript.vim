@@ -4,3 +4,5 @@ let g:javascript_plugin_jsdoc = 1
 let g:tern_map_keys=1
 " Show argument hints.
 let g:tern_show_argument_hints='on_hold'
+" Use eslint linter
+let g:syntastic_javascript_checkers = ['eslint']
