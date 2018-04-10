@@ -13,26 +13,27 @@ brew bundle
 # Install vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -fs $DIR/.vimrc ~/.vimrc
-ln -fs $DIR/.gvimrc ~/.gvimrc
-ln -fs $DIR/.vim/plug ~/.vim/plug
-ln -fs $DIR/.vim/ftplugin ~/.vim/ftplugin
+ln -fs $DIR/.vimrc ~/
+ln -fs $DIR/.gvimrc ~/
+mkdir -p ~/.vim
+ln -fs $DIR/.vim/plug ~/.vim/
+ln -fs $DIR/.vim/ftplugin ~/.vim/
 
 vim +'PlugInstall --sync' +qa
 
 # Install oh-my-zsh.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-ln -fs $DIR/.zshrc ~/.zshrc
+ln -fs $DIR/.zshrc ~/
 ln -fs $DIR/.zsh ~/
 
 mkdir -p ~/.lein
-ln -fs $DIR/.lein/profiles.clj ~/.lein/profiles.clj
+ln -fs $DIR/.lein/profiles.clj ~/.lein/
 
 # Javascripts.
 npm install -g eslint
-ln -fs $DIR/.eslintrc ~/.eslintrc
+ln -fs $DIR/.eslintrc ~/
 
-ln -fs $DIR/.tern-project ~/.tern-project
+ln -fs $DIR/.tern-project ~/
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py --tern-completer
 
