@@ -40,3 +40,6 @@ cd ~/.vim/plugged/YouCompleteMe
 pushd ~/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/tern_runtime
 npm install tern-chrome-extension
 popd
+
+# Typescripts.
+npm install -g typescript

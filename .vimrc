@@ -5,6 +5,10 @@ endif
 
 filetype plugin indent on
 
+" Sane tab, spaces configuration.
+setlocal shiftwidth=2
+setlocal tabstop=2
+
 " Use OSX clipboard by default.
 set clipboard=unnamed
 
@@ -71,4 +75,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Mapped keys.
+
+" Dash:
 :nmap <silent> <leader>d <Plug>DashSearch
+
+" vim-test:
+nmap <silent> t<C-n> :TestNearest<CR> " t Ctrl+n
+nmap <silent> t<C-f> :TestFile<CR>    " t Ctrl+f
+nmap <silent> t<C-s> :TestSuite<CR>   " t Ctrl+s
+nmap <silent> t<C-l> :TestLast<CR>    " t Ctrl+l
+nmap <silent> t<C-g> :TestVisit<CR>   " t Ctrl+g
