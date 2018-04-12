@@ -27,3 +27,5 @@ Plug 'vim-syntastic/syntastic'
 Plug 'janko-m/vim-test'
 
 Plug 'tpope/vim-projectionist'
+
+Plug 'skywind3000/asyncrun.vim'

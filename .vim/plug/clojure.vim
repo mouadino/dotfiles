@@ -10,3 +10,8 @@ Plug 'venantius/vim-eastwood'
 Plug 'venantius/vim-cljfmt'
 Plug 'vim-scripts/paredit.vim'
 Plug 'guns/vim-slamhound'
+
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'

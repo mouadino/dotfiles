@@ -43,3 +43,8 @@ popd
 
 # Typescripts.
 npm install -g typescript
+
+# Python
+pip3 install virtualenvwrapper
+pip3 install flake8
+ln -sf $DIR/.flake8 ~/

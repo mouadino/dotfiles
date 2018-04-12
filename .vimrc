@@ -50,6 +50,7 @@ endfunction
 call plug#begin('~/.vim/plugged')
 
 source ~/.vim/plug/main.vim
+source ~/.vim/plug/python.vim
 source ~/.vim/plug/clojure.vim
 source ~/.vim/plug/golang.vim
 source ~/.vim/plug/typescript.vim
