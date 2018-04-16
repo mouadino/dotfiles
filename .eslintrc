@@ -6,5 +6,8 @@
     },
     "rules": {
         "strict": 0
+    },
+    "parserOptions": {
+        "sourceType": "module"
     }
 }
