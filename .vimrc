@@ -5,10 +5,6 @@ endif
 
 filetype plugin indent on
 
-" Sane tab, spaces configuration.
-setlocal shiftwidth=2
-setlocal tabstop=2
-
 " Use OSX clipboard by default.
 set clipboard=unnamed
 

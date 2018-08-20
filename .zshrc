@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -26,3 +26,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Otto Related changes
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH:/Users/mouad/projects/otto/ft6_toolbo/bin
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+alias otto-work-on="/Users/mouad/otto/ft6_mac_at_otto/otto-certs.sh && /Users/mouad/otto/ft6_mac_at_otto/connect-otto.sh && OCN_USERNAME=mbenchch /Users/mouad/otto/ft6_mac_at_otto/otto-firewall-access"
+alias otto-work-off="/Users/mouad/otto/ft6_mac_at_otto/normal-certs.sh && /Users/mouad/otto/ft6_mac_at_otto/disconnect-otto.sh"

@@ -29,3 +29,7 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-projectionist'
 
 Plug 'skywind3000/asyncrun.vim'
+
+Plug 'wojtekmach/vim-rename'
+
+Plug 'Yggdroot/indentLine'
